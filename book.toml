@@ -1,0 +1,9 @@
+[book]
+authors = ["Carl Wallace"]
+language = "en"
+multilingual = false
+src = "src"
+title = "pbyk User's Guide"
+
+[build]
+build-dir = "pbyk-book"
