@@ -44,6 +44,9 @@ whose EDIPI is 5533442211.
     <img src="screenshots/pre_enroll.png">
 </div>
 
+The YubiKey Serial Number field is a drop list and will feature multiple options when multiple YubiKeys are available.
+When a different device is changed, the form displayed by the app may change to match the state of the newly selected device.
+
 ### Enroll
 
 Next, the Purebred Agent will affirm the hash value displayed following pre-enrollment to establish trust in the device and will provide an Enrollment OTP.
@@ -52,6 +55,8 @@ As with Pre-enrollment, the Enrollment operation must be completed within three 
 <div align="center">
     <img src="screenshots/enroll.png">
 </div>
+
+The YubiKey Serial Number field is a read-only text box and will feature the value selected on the Pre-enroll view.
 
 ### User key management
 
@@ -64,6 +69,9 @@ generating the OTP value.
     <img src="screenshots/ukm.png">
 </div>
 
+The YubiKey Serial Number field is a drop list and will feature multiple options when multiple YubiKeys are available.
+When a different device is changed, the form displayed by the app may change to match the state of the newly selected device.
+
 ### Recover
 
 The Recover operation is optional and follows the same steps as described for UKM. After obtaining a UKM OTP complete
@@ -73,6 +81,9 @@ the Recover operation as shown below taking care to clcik the `Recover Old Decry
 <div align="center">
     <img src="screenshots/recover.png">
 </div>
+
+The YubiKey Serial Number field is a drop list and will feature multiple options when multiple YubiKeys are available.
+When a different device is changed, the form displayed by the app may change to match the state of the newly selected device.
 
 ## Using command-line interface
 

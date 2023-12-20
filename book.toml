@@ -7,3 +7,10 @@ title = "pbyk User's Guide"
 
 [build]
 build-dir = "pbyk-book"
+
+[output.html]
+
+[output.pdf]
+
+[output.pdf-rename]
+command = "mv ../../pbyk-book/pdf/output.pdf ../../pbyk-book/pdf/pbyk-book.pdf"
