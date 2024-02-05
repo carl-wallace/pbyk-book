@@ -13,4 +13,5 @@ build-dir = "pbyk-book"
 [output.pdf]
 
 [output.pdf-rename]
+optional = true
 command = "mv ../../pbyk-book/pdf/output.pdf ../../pbyk-book/pdf/pbyk-book.pdf"
