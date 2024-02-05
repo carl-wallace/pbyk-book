@@ -23,8 +23,21 @@ to lock then reset a YubiKey.
 The reset_yubikey function is intended to perform the equivalent steps.
 
 The caller is assumed to have enforced PIN and PUK requirements. If either the PIN or PUK fails
-to satisfy requirements (as described [here](https://docs.yubico.com/yesdk/users-manual/application-piv/pin-puk-mgmt-key.html),
+to satisfy requirements (as described [here](https://docs.yubico.com/yesdk/users-manual/application-piv/pin-puk-mgmt-key.html)),
 then the attempt to set the PIN or PUK will fail.
+
+## Managing virtual smart cards with tpmvscmgr
+
+Windows provides the [tpmvscmgr](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tpmvscmgr) utility to create and destroy virtual smarts. The commands below will destroy the first
+virtual smart card on a system, then create new one using the default PIN value and a random administrator key. The 
+"/attestation AIK_AND_CERT" portion of this command is required when creating VSCs for use with Purebred where attestations 
+are to be used. Where attestations are not available, `pbyk` will attempt to perform enrollment without attestations.
+Use of a non-default PIN value is recommended.
+
+```bash
+TpmVscMgr destroy /instance root\smartcardreader\0000
+TpmVscMgr create /name MyVSC /pin default /adminkey random /generate /attestation AIK_AND_CERT
+```
 
 ## Sample logging configuration
 
