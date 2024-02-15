@@ -4,6 +4,10 @@ The features provided by `pbyk` will vary with how the utility was built. Some b
 Some may provide only a command-line interface, while others provide a graphical user interface (GUI) and
 a command line interface. This chapter addresses usage via the GUI.
 
+By default, when `pbyk` is launched in GUI mode, it will create a file named `log.yaml` in the `.pbyk` folder in the
+user's home directory. This logging configuration file will be used to generate a log file adjacent to the configuration 
+file. The configuration file can be customized. It will only be automatically created if absent.
+
 ## Purebred Workflow
 
 The Purebred workflow consists of four steps: [pre-enroll](#pre-enroll), [enroll](#enroll), [user key management](#user-key-management)
