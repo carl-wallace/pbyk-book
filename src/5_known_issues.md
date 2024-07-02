@@ -1,7 +1,6 @@
 # Known Issues
 
 ## General
-- NIPR and O&M NIPR builds are not presently supported owing to lack of support for BER decoding in the `cms` crate used by `pbyk` and the current NIPR CA's usage of BER encoding when returning CA certificates during SCEP processing.  The next NIPR CA update should enable these features to be used.
 - GUI support is not presently provided for Linux
 
 ## GUI mode
