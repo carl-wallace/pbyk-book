@@ -1,5 +1,11 @@
 # Release Notes
 
+## v0.4.2
+
+* Fixed a GUI bug on the reset form where the YubiKey PUK input fields were bound to the PIN value
+* Replaced the openssl-based PKCS #12 implementation with the pure-Rust `pkcs12_builder` crate, removing the native openssl build dependency
+* Dependency updates
+
 ## v0.4.1
 
 * Changes some language displayed to users when provisioning a YubiKey that has not been configured with the expected management key. 

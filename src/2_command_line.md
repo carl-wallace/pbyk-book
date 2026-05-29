@@ -43,7 +43,7 @@ Diagnostics:
 Utilities:
   -y, --list-yubikeys  Lists available YubiKey devices, if any
   -v, --list-vscs      Lists available virtual smart card (VSC) devices, if any
-  -r, --reset-device   Resets the indicated device to a default state using a management key expected by Purebred applications
+  -r, --reset-device   Resets the indicated device to a default state using the management key expected by Purebred applications; `AES192` is used with firmware 5.7.0 and later, otherwise `TDES` is used
   -i, --interactive    Run pbyk as command line app
 
 Logging:
